@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Quiz App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="start-screen" id="start-screen">
+      <h1>🧠 Pro Quiz App</h1>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-box hidden" id="quiz-box">
+      <div class="top-bar">
+        <div id="progress">Question 1/5</div>
+        <div id="timer">15s</div>
+      </div>
+      <h2 id="question">Question here...</h2>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+
+    <div class="result-box hidden" id="result-box">
+      <h2>🎉 Quiz Completed</h2>
+      <p id="final-score">Your Score: 0%</p>
+      <button onclick="location.reload()">Try Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
